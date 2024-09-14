@@ -7,53 +7,68 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Li, Lu}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
-
+  \email{ustc.lilu630@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 18916915690} \textperiodcentered\ 
+}
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{University of Science and Technology of China (USTC)}}{2011 -- 2016}
+\textit{PhD} in electronic science and technology. Major is 3D data reconstruction and visualization using CUDA
+\datedsubsection{\textbf{University of Science and Technology of China (USTC)}}{2007 -- 2011}
+\textit{B.S.} in electronic science and technology
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\section{\faUsers\ Work Experience}
+\datedsubsection{\textbf{Intel Asia Pacific Research and Development Co., Ltd.} Shanghai, China}{2016 -- Present}
+
+\datedsubsection{\textbf{multiple node training deep learning framework for Theano}}{2016.6 -- 2017.6}
+\role{Dsta parallel. Create a new fullconnected layer on each node}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item new fullconected layer op
+  \item create googlenet on 4 nodes using parallel Theano. Validate the accrurcy
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{Support Ali TianChi}}{2017.7 -- 2018.3}
+\role{Model startup, profile and optimization}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item run workloads on 3Dunet in Caffe on KNL and profile the bottlenneck
+  \item Optimization 3D convolution layer for specific input on KNL
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\datedsubsection{\textbf{Autonomous driving simulatioin platform}}{2018.4 -- 2020.6}
+\role{Carla is a simulator base on UnrealEngine. it can generate realsense map for autonomous driving}
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item build OpenDrive format map from image exported form Carla
+  \item create a ros/cyber bridge to connect Carla and Apollo. Carla send Camera,lidar,location to Apollo, Apollo sends control signal back to Carla.
+  \item create scenarios so that 
+  \item multiple instances of autonomous driving cars in a map. they are connected by v2x
+  \item profile the bottlenck of Apollo to find oppotunity to design specific SoC
+\end{itemize}
+
+\datedsubsection{\textbf{Intel uncore simulation product CoFluent}}{2020.7 -- Present}
+\role{CoFluent was original owned by Swidish team, the product transformed to our team. CoFluent has a eclipse java frontend and C++ backend.}
+\begin{itemize}
+  \item  establish CI/CD and personal testing platform for both Windows and Linux using Jenkins
+  \item As the whole simuation is signle thread, We split the model and using process level parallelism.
+  \item optimization backend C++ code by Vtune
+  \item create SAG LLM chatbot to CoFluent users to search doc and function usage
+\end{itemize}
+
+\datedsubsection{\textbf{Joint research with SJTU}}{2017.4 -- Present}
+\role{Our team is a partner of school of Ocean and Civil engineering}
+\begin{itemize}
+  \item optimization HPC workloads 
+  \item computer vision. Weld pool monitoring by YOLO v8, point cloud segmentation.
+  \item robot. Welding Robot planning
 \end{itemize}
 
 % Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+An xxx optimized for xxx\cite{verma2015large}
+\begin{itemize}
+  \item main contribution
+\end{itemize}
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
